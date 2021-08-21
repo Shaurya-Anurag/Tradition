@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+
+}
+
+.sidepanel2  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 250px;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel2 a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel2 a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel2 .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn2 {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn2:hover {
+  background-color:#444;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+<div id="mySidepanel" class="sidepanel2">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+  <a href="file:///C:/Users/SOROBH/OneDrive/Desktop/Tradition/The%20page%20after%20tradition.html">Home</a>
+
+  <a href="#">Traditional Tools</a>
+
+  <a href="#">Traditional Clothes</a>
+
+  <a href="file:///C:/Users/SOROBH/OneDrive/Desktop/Tradition/Tradition%20books.html">Traditional Literature</a>
+
+  <a href="#">Artificial Traditional Weapons</a>
+
+  <a href="file:///C:/Users/SOROBH/OneDrive/Desktop/Tradition/Tradition%20Bags.html">Traditional Bags</a>
+
+  <a href="#">Traditional Utensils</a>
+  <a href="#">Traditional Toys</a>
+  <a href="#">Traditional Footware</a>
+  <a href="#">Traditional Paintings</a>
+
+  <a href="file:///C:/Users/SOROBH/OneDrive/Desktop/Tradition/Traditional%20Musical%20Instruments.html">Traditional Musical Instruments</a>
+
+  <a href="#">Traditional Handicrafts</a>
+  
+</div>
+<button class="openbtn2" onclick="openNav()"><span style="font-family:Colonna MT;font-size:30px;">☰ Tradition</span></button>
+<script>
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+<h1 style="font-family:Colonna MT; font-size:54px;text-align:center;"><u>Traditional Jewellery</u></h1>
+<hr>
+
+
+
+
+
+
+
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('bo')"> Jewellery set</button>
+  <button class="btn" onclick="filterSelection('na')">Earrings</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column bo">
+    <div class="content">
+      <img src="https://m.media-amazon.com/images/I/711t3Vw4+mL._AC_UL480_FMwebp_QL65_.jpg" alt="Mountains" style="width:100%">
+      
+      <h4>South Indian Traditional Fashion Jewellery Wedding Ruby Haram Set</h4>
+      <p>₹5,350.00</p>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="column bo">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/61joIexb0QL._AC_UL480_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br><br><br>
+      <h4>South Indian Traditional Trendy Stylish Fashion Jewellery Wedding Ruby Handcrafted Stone Long Necklace Haram </h4>
+      <p>₹1,890.00</p>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  <div class="column bo">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/71Qw-45V8jL._AC_UL480_FMwebp_QL65_.jpg" alt="Nature" style="width:100%">
+    <br><br>
+      <h4>Shining Diva Fashion Latest Design Combo Stylish Necklace Set Wedding Traditional Jewellery</h4>
+      <p>₹500.00</p>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="column bo">
+    <div class="content">
+      <img src="https://m.media-amazon.com/images/I/71dcTdfuClS._AC_UL480_FMwebp_QL65_.jpg" alt="Car" style="width:100%">
+      <br><br>
+      <h4>Spargz Bridal Traditional Gold Plated Synthetic Stone Ethnic Jewellery Set</h4>
+      <p>₹1,035.00</p>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <div class="column bo">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/811lXSljHQL._AC_UL480_FMwebp_QL65_.jpg" alt="Car" style="width:100%">
+    <br><br><br><br><br><br>
+      <h4>Apara Traditional Jewellery Gold Plated Jewellery Set</h4>
+      <p>₹2,347.00</p>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="column bo">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/81AZfH8WtIL._AC_UL480_FMwebp_QL65_.jpg" alt="Car" style="width:100%">
+      <h4>Apara Traditional Red and Green Gold Plated Double Layer Kundan Partwear Jewellery Necklace Set </h4>
+      <p>₹2,384.00</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  <div class="column na">
+    <div class="content">
+      <img src="https://m.media-amazon.com/images/I/71uIxJiX1eL._AC_UL480_FMwebp_QL65_.jpg" alt="Car" style="width:100%">
+      <h4>Fashion Jewellery Traditional Ethnic Pearls Jhumkas Jhumkis Earrings</h4>
+      <p>₹5,445.00</p>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="column na">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/81oaf8LgIKL._AC_UL480_FMwebp_QL65_.jpg" alt="Car" style="width:100%">
+    <br><br><br><br>
+      <h4>Peora Oxidised Silver Square Floral Adjustable Ring with Earrings Jewellery Indian Traditional Jewellery</h4>
+      <p>₹224.00 </p>
+    </div>
+  </div>
+  
+  <div class="column na">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/71OXYe5yuFL._AC_UL480_FMwebp_QL65_.jpg" alt="Car" style="width:100%">
+    <br><br><br>
+      <h4>Fashion Jewellery Traditional Ethnic Pearls Jhumka Earrings </h4>
+      <p>₹1,620.00</p>
+    </div>
+  </div>
+  <div class="column na">
+   <div class="content">
+    <img src="https://m.media-amazon.com/images/I/71Lwialin6L._AC_UL480_FMwebp_QL65_.jpg" alt="Car" style="width:100%">
+    <br>
+      <h4> Jhumki Earrings for Women</h4>
+      <p>₹2,609.00</p>
+    </div>
+  </div>
+   <div class="column na">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/61b2RyRRHHL._AC_UL480_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    
+      <h4>14KT Yellow Gold Stud Earrings for Women</h4>
+      <p>₹13,359.00</p>
+    </div>
+  </div>
+   <div class="column na">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/71t5PdhmuLL._AC_UL480_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br><br><br>
+      <h4> Pearls Beautifully Enamelled Peacock Inspired Jhumki Earring</h4>
+      <p>₹1,953.00 </p>
+    </div>
+  </div>
+   <div class="column na">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/71eJXFmrEWL._AC_UL480_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br>
+      <h4> Pearls Multicolor Peacock Design Jhumki Earring</h4>
+      <p>₹12,373.00</p>
+    </div>
+  </div>
+   <div class="column na">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/71-9skGTxjL._AC_UL480_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br>
+      <h4> Pearls Classic Enamelled Jhumki Earring</h4>
+      <p>₹2,831.00</p>
+    </div>
+  </div>
+   <div class="column na">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/71v2nVgG2zL._AC_UL480_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    
+      <h4> PEARLS Dangler Earrings </h4>
+      <p>₹1,696.00 </p>
+    </div>
+  </div>
+   <div class="column bo">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/81AZfH8WtIL._AC_UL480_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br>
+      <h4> Traditional Red and Green Gold Plated Double Layer Kundan Partwear Jewellery Necklace Set</h4>
+      <p>₹2,384.00</p>
+    </div>
+  </div>
+   <div class="column bo">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/81rEQtgHNQL._AC_UL480_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br><br><br><br>
+      <h4> Temple Jewellery South Indian Wedding Red Green Matte Gold Antique Peacock Traditional Long Necklace Jewellery Sets Jhumki Earrings </h4>
+      <p>₹9,149.00</p>
+    </div>
+  </div>
+   <div class="column bo">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/71TqH4-tZYL._AC_UL480_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br><br>
+      <h4> Traditional Pearl Kundan Long Multi Layer Necklace Set</h4>
+      <p>₹1,668.00</p>
+    </div>
+  </div>
+   <div class="column na">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/51Zo0R2vnrL._AC_UL480_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br> <br><br>
+      <h4>Tribute Rose Gold & Diamond Hoop Earrings</h4>
+      <p>₹9,955.00</p>
+    </div>
+  </div>
+   <div class="column na">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/71+q+W0tCWS._AC_UL480_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    
+      <h4>Metal South Indian Style Sun Shaped Big Long Jhumka Jhumki Earrings Traditional</h4>
+      <p>₹1,135.00 </p>
+    </div>
+  </div>
+   <div class="column na">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/71N8MZIJFuL._AC_UL480_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br><br><br>
+      <h4>Designer Gold Plated Jhumki Earring</h4>
+      <p>₹1,096.00</p>
+    </div>
+  </div>
+
+
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>

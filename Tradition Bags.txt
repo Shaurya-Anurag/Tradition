@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+
+}
+
+.sidepanel2  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 250px;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel2 a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel2 a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel2 .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn2 {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn2:hover {
+  background-color:#444;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+<div id="mySidepanel" class="sidepanel2">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="file:///C:/Users/SOROBH/OneDrive/Desktop/Tradition/The%20page%20after%20tradition.html">Home</a>
+  <a href="#">Traditional Tools</a>
+  <a href="#">Traditional Clothes</a>
+  <a href="file:///C:/Users/SOROBH/OneDrive/Desktop/Tradition/Tradition%20books.html">Traditional Literature</a>
+  <a href="#">Artificial Traditional Weapons</a>
+  <a href="file:///C:/Users/SOROBH/OneDrive/Desktop/Tradition/Traditional%20Jewellery.html">Traditional Jewellery</a>
+  <a href="#">Traditional Utensils</a>
+  <a href="#">Traditional Toys</a>
+  <a href="#">Traditional Footware</a>
+  <a href="#">Traditional Paintings</a>
+  <a href="file:///C:/Users/SOROBH/OneDrive/Desktop/Tradition/Traditional%20Musical%20Instruments.html">Traditional Musical Instruments</a>
+  <a href="#">Traditional Handicrafts</a>
+  
+</div>
+<button class="openbtn2" onclick="openNav()"><span style="font-family:Colonna MT;font-size:30px;">☰ Tradition</span></button>
+<script>
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+<h1 style="font-family:Colonna MT; font-size:54px;text-align:center;"><u>Traditional Bags</u></h1>
+<hr>
+
+
+
+
+
+
+
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('s')"> Cross-body bags</button>
+  <button class="btn" onclick="filterSelection('g')">Handbags</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column s">
+    <div class="content">
+      <img src="https://m.media-amazon.com/images/I/71nsb9lyuIL._AC_UL480_FMwebp_QL65_.jpg" alt="Mountains" style="width:100%">
+      
+      <h4>Indian Rajasthani jaipur Bohemian art Sling Bag Foldover Clutch Purse Cross Body Bags</h4>
+      <p>₹1,050.00</p>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="column s">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/91pM40nZ5ZL._AC_UL480_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br><br>
+      <h4>Hand Tooled Painted Genuine Leather Indian Shantiniketan Boho Hippie Ethnic Shoulder Crossbody Bag </h4>
+      <p>₹1,970.00</p>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  <div class="column s">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/51VWEaRBwpL._AC_UL480_FMwebp_QL65_.jpg" alt="Nature" style="width:100%">
+    <br><br><br><br>
+      <h4>Rajasthani Embroidered Banjara Foldover Clutch Purse-Sling Bag-Cross Body Bag</h4>
+      <p>₹225</p>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="column s">
+    <div class="content">
+      <img src="https://m.media-amazon.com/images/I/81YaVIK53gL._AC_UL480_FMwebp_QL65_.jpg" alt="Car" style="width:100%">
+      <br>
+      <h4>EMBROIDERED (Hand Made) Zari Multi-Color Mobile Sling Bag</h4>
+      <p>₹250.00 </p>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <div class="column s">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/81+slXNqyxL._AC_UL480_FMwebp_QL65_.jpg" alt="Car" style="width:100%">
+    <br><br>
+      <h4> EMBROIDERED (Hand Made) Mirror Design Velvet Sling Bag </h4>
+      <p>₹259.00</p>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="column s">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/912osiyJBoS._AC_UL480_FMwebp_QL65_.jpg" alt="Car" style="width:100%">
+    <br><br><br><br><br>
+      <h4>Leather Handmade Multicolour Potli Women's Sling Bag </h4>
+      <p>₹825.00</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  <div class="column g">
+    <div class="content">
+      <img src="https://m.media-amazon.com/images/I/71GocnH62WL._AC_UL480_FMwebp_QL65_.jpg" alt="Car" style="width:100%">
+      <h4>Velvet Red Potli Bag Golden work wedding potli</h4>
+      <p>₹265.00</p>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="column g">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/81EvOhvt07L._AC_UL480_FMwebp_QL65_.jpg" alt="Car" style="width:100%">
+    <br>
+      <h4>Velvet Black Potli Bag Golden work wedding potli</h4>
+      <p>₹734.00</p>
+    </div>
+  </div>
+  
+  <div class="column g">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/81zY8kDdnUS._UL1500_.jpg" alt="Car" style="width:100%">
+    
+      <h4>Pink Handbag Potli </h4>
+      <p>₹162.00</p>
+    </div>
+  </div>
+  <div class="column g">
+   <div class="content">
+    <img src="https://m.media-amazon.com/images/I/81gkTQ55R7S._UL1500_.jpg" alt="Car" style="width:100%">
+    <br>
+      <h4> Light Peach Handbag Potli</h4>
+      <p>₹260.00</p>
+    </div>
+  </div>
+   <div class="column g">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/71XlXOfZX4S._UL1500_.jpg" alt="Lights" style="width:100%">
+    <br><br><br>
+      <h4>Red Handbag Potli</h4>
+      <p>₹130.00</p>
+    </div>
+  </div>
+   <div class="column g">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/81ZLUWOoytS._UL1500_.jpg" alt="Lights" style="width:100%">
+    <br><br><br>
+      <h4> Yellow Handbag Potli</h4>
+      <p>₹195.00 </p>
+    </div>
+  </div>
+   <div class="column g">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/91PsyfUqlSS._UL1500_.jpg" alt="Lights" style="width:100%">
+    <br>
+      <h4> 4 Pcs Potli bags (Red,Light Peach,Yellow,Pink Potli bags </h4>
+      <p>₹2,300.00</p>
+    </div>
+  </div>
+   <div class="column g">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/A1bNQVncVFL._AC_UL480_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br>
+      <h4>4 Pcs Firozi Potli bags </h4>
+      <p>₹1,200.00 </p>
+    </div>
+  </div>
+   <div class="column g">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/91F3bEaDdEL._AC_UL480_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    
+      <h4> 4 Potli bags (2 Pink and 2 Black)</h4>
+      <p>₹2,209.00</p>
+    </div>
+  </div>
+   <div class="column s">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/81jq4uJCAqL._AC_UL480_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br><br>
+      <h4>Handbag multicolor bag Sling bag evening bag</h4>
+      <p>₹1,000.00</p>
+    </div>
+  </div>
+   <div class="column s">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/51V3m++sQHL._AC_UL480_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br><br><br><br>
+      <h4> Embroidered Handcrafted Envelope Clutch Purse-Sling Bag-Cross Body Bag </h4>
+      <p>₹410.00</p>
+    </div>
+  </div>
+   <div class="column s">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/81YaVIK53gL._AC_UL480_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    
+      <h4>EMBROIDERED (Hand Made) Zari Multi-Color Mobile Sling Bag</h4>
+      <p>₹250.00</p>
+    </div>
+  </div>
+   <div class="column g">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/91spz8rCg-L._AC_UL480_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br> <br><br>
+      <h4>Rajasthani Style Royal Clutch Silk Batwa Bag Combo Wristlets</h4>
+      <p>₹1,199.00</p>
+    </div>
+  </div>
+   <div class="column g">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/71CqzjbVQ1S._UL1500_.jpg" alt="Lights" style="width:100%">
+    <br><br><br>
+      <h4>Wrap Shap Set of 12 Royal Velvet Potli Batwa Bag Bridal Purse </h4>
+      <p>₹510.00</p>
+    </div>
+  </div>
+   <div class="column g">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/91uhSjksh5L._UL1500_.jpg" alt="Lights" style="width:100%">
+    <br><br><br><br><br><br><br><br><br><br>
+      <h4>Designer Gold Plated Jhumki Earring</h4>
+      <p>₹1,096.00</p>
+    </div>
+  </div>
+
+
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>

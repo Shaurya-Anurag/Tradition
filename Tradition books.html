@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+
+}
+
+.sidepanel2  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 250px;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel2 a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel2 a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel2 .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn2 {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn2:hover {
+  background-color:#444;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+<div id="mySidepanel" class="sidepanel2">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="file:///C:/Users/SOROBH/OneDrive/Desktop/Tradition/The%20page%20after%20tradition.html">Home</a>
+  <a href="#">Traditional Tools</a>
+  <a href="#">Traditional Clothes</a>
+  <a href="file:///C:/Users/SOROBH/OneDrive/Desktop/Tradition/Traditional%20Jewellery.html">Traditional Jewellery</a>
+  <a href="#">Artificial Traditional Weapons</a>
+  <a href="file:///C:/Users/SOROBH/OneDrive/Desktop/Tradition/Tradition%20Bags.html">Traditional Bags</a>
+  <a href="#">Traditional Utensils</a>
+  <a href="#">Traditional Toys</a>
+  <a href="#">Traditional Footware</a>
+  <a href="#">Traditional Paintings</a>
+  <a href="file:///C:/Users/SOROBH/OneDrive/Desktop/Tradition/Traditional%20Musical%20Instruments.html">Traditional Musical Instruments</a>
+  <a href="#">Traditional Handicrafts</a>
+  
+</div>
+<button class="openbtn2" onclick="openNav()"><span style="font-family:Colonna MT;font-size:30px;">☰ Tradition</span></button>
+<script>
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+<h1 style="font-family:Colonna MT; font-size:54px;text-align:center;"><u>Traditional Literature</u></h1>
+<hr>
+
+
+
+
+
+
+
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('religion')"> Religious or Mythological</button>
+  <button class="btn" onclick="filterSelection('food')">Food</button>
+  <button class="btn" onclick="filterSelection('clothes')">Clothes</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column clothes">
+    <div class="content">
+      <img src="https://m.media-amazon.com/images/I/A1oqCIJ36BL._AC_UY327_FMwebp_QL65_.jpg" alt="Mountains" style="width:100%">
+      
+      <h4>Traditional Indian Handcrafted Textiles</h4>
+      <p>₹2,090.00</p>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="column food">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/81dF1SBCMbS._AC_UY327_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+      <h4>201 Indian Traditional & Instant Food Cookbook Collection-Indian recipes</h4>
+      <p>₹220.00</p>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  <div class="column food">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/A1s+CIsfGTL._AC_UY327_FMwebp_QL65_.jpg" alt="Nature" style="width:100%">
+    <br><br><br><br><br>
+      <h4>Indian Instant Pot Cookbook - Traditional 500 Indian Recipes for Beginners with Vegan </h4>
+      <p>₹399.00</p>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="column food">
+    <div class="content">
+      <img src="https://m.media-amazon.com/images/I/71-+e4KGtjL._AC_UY327_FMwebp_QL65_.jpg" alt="Car" style="width:100%">
+      <br>
+      <h4>An Indian Housewife's Recipe Book: Over 100 traditional recipes</h4>
+      <p>₹1,077.00</p>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <div class="column clothes">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/51IAbPSRPYL._AC_UY327_FMwebp_QL65_.jpg" alt="Car" style="width:100%">
+    <br><br><br><br>
+      <h4>Traditional Indian Costumes and Textiles</h4>
+      <p>₹395.00</p>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="column food">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/81dF1SBCMbS._AC_UY327_FMwebp_QL65_.jpg" alt="Car" style="width:100%">
+      <h4>201 Indian Traditional & Instant Pot Food Cookbook A Collection of Traditional Recipes</h4>
+      <p>₹220.00</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  <div class="column food">
+    <div class="content">
+      <img src="https://m.media-amazon.com/images/I/71Rjw7NiBXS._AC_UY327_FMwebp_QL65_.jpg" alt="Car" style="width:100%">
+      <h4>The Indian Way - Yogurt, Raitas & Pachadis: The Traditional & Cultural Yogurt Repository</h4>
+      <p>₹221.00</p>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="column food">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/71W3jBvVKrS._AC_UY327_FMwebp_QL65_.jpg" alt="Car" style="width:100%">
+      <h4>The Indian Way - Chutneys & Pickles Cookbook: The Spices and Flavors from Traditional Recipes </h4>
+      <p>₹224.00 </p>
+    </div>
+  </div>
+  
+  <div class="column clothes">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/71ygf-LciIS._AC_UY327_QL65_.jpg" alt="Car" style="width:100%">
+    <br><br><br>
+      <h4>Three Thousand Stitches: Ordinary People, Extraordinary Lives </h4>
+      <p>₹183.00</p>
+    </div>
+  </div>
+  <div class="column religion">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/81-7XZjBnZL._AC_UY327_FMwebp_QL65_.jpg" style="width:100%">
+      <h4>Ram - Scion of Ikshvaku (Ram Chandra) </h4>
+      <p>₹210.00</p>
+    </div>
+  </div>
+   <div class="column religion">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/51xxxYW+mLL._AC_UY327_QL65_.jpg" alt="Lights" style="width:100%">
+      <h4>Indian Tales (Puffin Books) </h4>
+      <p>₹199.00</p>
+    </div>
+  </div>
+   <div class="column religion">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/61Svlv2gPCS._AC_UY327_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+      <h4>The Immortals of Meluha (Shiva Trilogy)</h4>
+      <p>₹307.00</p>
+    </div>
+  </div>
+   <div class="column religion">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/91S7Ec5s1kL._AC_UY327_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br>
+      <h4>Story book for kids: 365 Tales from Indian Mythology</h4>
+      <p>₹9,585.00</p>
+    </div>
+  </div>
+   <div class="column religion">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/51OhW3oXfvL._AC_UL480_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br><br>
+      <h4>7 Secrets of Shiva</h4>
+      <p>₹270.00</p>
+    </div>
+  </div>
+   <div class="column religion">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/6132xoRmFdL._AC_UY327_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br>
+      <h4>Indians: A Brief History of a Civilization</h4>
+      <p>₹385.00</p>
+    </div>
+  </div>
+   <div class="column religion">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/81qi1NgZrnL._AC_UY327_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br><br>
+      <h4>Brahma- Creator of the Universe-Indian Mythology</h4>
+      <p>₹192.50</p>
+    </div>
+  </div>
+   <div class="column religion">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/61ZSNI3SlUL._AC_UY327_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br><br>
+      <h4>Shrimad Bhagwat Gita in Hindi </h4>
+      <p>₹300.00</p>
+    </div>
+  </div>
+   <div class="column religion">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/51AwVyyk0hL._AC_UY327_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+      <h4>Shri Ram charitmanas Gita Press Ramcharitmanas, Tulsidas Krit Ramcharitmanas</h4>
+      <p>₹280.00</p>
+    </div>
+  </div>
+   <div class="column religion">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/81V05OrzH8S._AC_UY327_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br> <br><br>
+      <h4>The Upanishads by Swami Paramananda</h4>
+      <p>₹499.00</p>
+    </div>
+  </div>
+   <div class="column religion">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/71J17zKYrSL._AC_UY327_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br> <br><br>
+      <h4>Vedas in Sanskrit & Hindi</h4>
+      <p>2,335.00</p>
+    </div>
+  </div>
+   <div class="column religion">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/71gzqvij5nL._AC_UY327_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+      <h4>Mahabharat ki Ansuni Kahaniyan: Bhag 1</h4>
+      <p>₹520.00</p>
+    </div>
+  </div>
+   <div class="column religion">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/81Cl03QUhFL._AC_UY327_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br>
+      <h4>Dharma: Decoding the Epics for a Meaningful Life </h4>
+      <p>₹2600.00</p>
+    </div>
+  </div>
+   <div class="column religion">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/91HT7rB8tfL._AC_UL480_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+      <h4>Legend of Suheldev: The King Who Saved India</h4>
+      <p>₹270 </p>
+    </div>
+  </div>
+   <div class="column religion">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/61HK5Tm1QyL._AC_UY327_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br>
+      <h4>Sita: Warrior of Mithila</h4>
+      <p>₹351.00</p>
+    </div>
+  </div>
+   <div class="column religion">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/71wywE48MPS._AC_UY327_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <Br><br><br><br>
+      <h4>Mahayoddha Kalki: Sword of Shiva</h4>
+      <p>₹1770.00 </p>
+    </div>
+  </div>
+   <div class="column religion">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/91Kgn35jruL._AC_UY327_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+      <h4>Adi Purana: Entire Veda as a Single Story</h4>
+      <p>₹51.45 </p>
+    </div>
+  </div>
+   <div class="column religion">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/81vG7Nq23dL._AC_UY327_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br><br><br><br><br><br>
+      <h4>The Shiva Sutras </h4>
+      <p>₹499.00</p>
+    </div>
+  </div>
+   <div class="column food">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/A1X777j0j2L._AC_UY327_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br><br><br><br>
+      <h4>Vegan Richa's Indian Kitchen: Traditional and Creative Recipes for the Home Cook</h4>
+      <p> ₹657.99</p>
+    </div>
+  </div>
+   <div class="column food">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/61D9cwBUKBL._AC_UY327_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br><br>
+      <h4>Chutneys – Adding Spice to Your Life!: Over 50 Traditional South Indian 'Pacchadis </h4>
+      <p>₹3990.00</p>
+    </div>
+  </div>
+   <div class="column clothes">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/91jfcYVBZaL._AC_UY327_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br><br><br><br><br>
+      <h4>Traditional Embroideries of India Hardcover </h4>
+      <p>₹600.00</p>
+    </div>
+    
+    
+  </div> <div class="column food">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/815IM9-2IeL._AC_UY327_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br>
+      <h4>Tried and Tasted: Cookbook by Nargis Mithani</h4>
+      <p>₹355.00</p>
+    </div>
+  </div>
+  
+  
+   <div class="column food">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/71wGVMtlHQL._AC_UY327_QL65_.jpg" alt="Lights" style="width:100%">
+      <h4>The Jewels of the Nizam: Recipes from the Khansamas of Hyderabad</h4>
+      <p>₹2330.00</p>
+    </div>
+  </div>
+  
+  
+   <div class="column food">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/91uO95k3SCS._AC_UY327_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br>
+      <h4>Indian Cookbook: 70 Easy Recipes For Traditional Dishes From India</h4>
+      <p>₹5,067.99</p>
+    </div>
+  </div>
+   <div class="column religion">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/71jEVV0p9uS._AC_UY327_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br><br><br>
+      <h4>Siddhartha</h4>
+      <p>₹499.00 </p>
+    </div>
+  </div>
+   <div class="column religion">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/41MMY3lsCIL._AC_UY327_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+    <br><br>
+      <h4>Indian Mythology</h4>
+      <p>₹329.00</p>
+    </div>
+  </div>
+   <div class="column religion">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/51bMafgf1uL._AC_UY327_FMwebp_QL65_.jpg" alt="Lights" style="width:100%">
+      <h4>Amazing Ayodhya</h4>
+      <p>₹350.00</p>
+    </div>
+  </div>
+
+
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
